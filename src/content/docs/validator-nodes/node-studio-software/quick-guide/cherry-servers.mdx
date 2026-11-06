@@ -1,0 +1,89 @@
+---
+title: Cherry Servers
+description: Instructions to setup your node
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+### 🛠️ Option B: Create a Cherry Servers Account and Obtain an API Key (Infrastructure Provider)
+
+#### 1.1 Create an account
+
+Go to [https://portal.cherryservers.com/register](https://portal.cherryservers.com/register) and create a new user account.
+
+#### 1.2 Complete identity verification (mandatory)
+
+Once registered, go to your **Profile** and locate the **“Identity verification”** section.\
+Complete the required verification process and wait until it is approved.
+
+
+<Aside type="note">
+
+⚠️ Identity verification is mandatory to use Cherry Servers services.
+
+</Aside>
+
+
+#### 1.3 Add a payment method and fund your balance
+
+After verification approval:
+
+* Go to **Profile → Billing**
+* Add your preferred payment method
+* Cherry Servers supports **crypto payments**
+
+In the **Team Balance** section, you must add an initial balance in order to rent a VPS.
+
+
+<Aside type="note">
+
+💡 **Pricing notes:**
+
+* For users **outside the European Union**, the VPS cost is approximately **USD 11.8**
+
+EU residents must calculate and include **VAT** on top of this amount
+
+</Aside>
+
+
+💳 **Credit / Debit Card users:**\
+If you fund your balance using a **credit or debit card**, you can enable automatic future charges.\
+After adding balance, go to **User → Subscription Payments** and enable **Automatic Renewal** to allow future charges to be processed automatically.
+
+#### 1.4 Generate an API Key
+
+Once your account has available balance:
+
+* Go to [https://portal.cherryservers.com/settings/api-keys](https://portal.cherryservers.com/settings/api-keys)
+* Create a new API Key
+* Copy and store it securely
+
+#### 1.5 Connect to Node Studio
+
+Go to the Node Studio platform:\
+[https://near.xnode.openmesh.network/](https://near.xnode.openmesh.network/)
+
+#### 1.6 Deploy the VPS
+
+* Click **Deploy**
+* Select the recommended VPS option:
+
+**Cloud VPS 6 (Gen 2)**\
+6-Core CPU, 6 GB RAM, 100 GB SSD, 1 Gbps Networking, 1,024 GB Bandwidth
+
+#### 1.7 Link your Cherry Servers account
+
+* When prompted, paste the **Cherry Servers API Key**
+* Click **Rent Server** (**⚠️ only once** to avoid multiple charges)
+
+#### 1.8 Wait for provisioning
+
+* Wait a few minutes for the server rental to execute
+* The server will appear in Node Studio with status **“Provisioning”**
+* This process usually takes around **10 minutes**
+
+If after 10 minutes the status is still **“Provisioning”**, refresh the Node Studio page to update the status and continue with the validator setup process.
+
+***
+
+-> Continue on [Step 2](./)

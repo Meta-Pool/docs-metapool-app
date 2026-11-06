@@ -1,0 +1,131 @@
+---
+title: Node Studio Dashboard Guide for NEW NEAR Validators
+description: This guide provides useful recommendations for Node Runners to properly monitor and maintain their validator node using the Node Studio Dashboard.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+### 1. Regular Dashboard Checks
+
+Make it a habit to review your dashboard periodically.
+
+* Check if there are new updates available for both NEAR and your operating system.
+* Keeping your validator updated ensures smooth participation in the network.<br />
+
+### 2. Disk Capacity Monitoring
+
+Validator nodes constantly write chain data to disk. Depending on the VPS plan, you will usually have 80–160 GB of storage available.
+
+* If your disk is getting full, use the "Delete NEAR Chain Data" button located in the Actions section of Node Studio.
+* This will erase the stored chain data and re-sync the node with the network.
+* The resync process typically takes 25–35 minutes.
+* If synchronization takes significantly longer, please contact the Meta Pool team for support.<br />
+
+### 3. Log Monitoring
+
+Logs allow you to verify that your validator is running correctly.
+
+* Normal logs will show routine validator activity.
+* If you notice frequent errors or warnings that seem to affect validator operation, reach out to the Meta Pool team for assistance.<br />
+
+<figure><img src="/assets/validatorlogs.png" alt="" /><figcaption></figcaption></figure>
+
+### 4. Validator Performance Control
+
+This section of the dashboard includes three key metrics:
+
+* Blocks Produced
+* Chunks Produced
+* Endorsements Produced
+
+<figure><img src="/assets/image%20%2812%29.png" alt="" /><figcaption></figcaption></figure>
+
+#### Blocks and Chunks
+
+For most Node Studio validators:
+
+* It is normal to see 0/0 in Blocks and Chunks Produced.
+* Only the Top 100 validators by stake on the NEAR network produce blocks and chunks.
+* As an example, these are validators with more than \~800,000 NEAR staked.<br />
+
+#### Endorsements
+
+Endorsements are where Node Studio validators are actively contributing to the network.
+
+* This is the most important metric to monitor constantly.
+* With Node Studio hardware, normal endorsement performance should remain above 97%.
+* Node Runners must ensure this percentage never drops below 70%.
+* If a validator finishes an epoch with endorsement performance under 70%, it will be kicked out of the network.
+
+
+<Aside type="note">
+
+⚠️ If you see your endorsement production percentage going down, contact the Meta Pool team immediately for assistance.
+
+</Aside>
+
+
+### 5. Understanding and Viewing Validator Rewards
+
+#### How Rewards Work
+
+When you run a validator, you are providing a validation service to the NEAR network. In return for this service, NEAR generates new NEAR tokens used as rewards for users who delegate their NEAR to validators.
+
+Validators charge a commission fee to those delegators. This is called Fee Rewards.
+
+* The maximum fee allowed by the Node Studio program is 7%.
+* Your rewards depend on:
+  * Total Stake – the total amount of NEAR delegated to your validator.
+  * APY – the annual yield of the network (see official NEAR docs on APY calculation).
+  * Fee% – the commission you set (up to 7%).
+
+#### **Formula (annualized):**
+
+FeeRewards = TotalStake \* APY \* Fee%
+
+#### Reward Distribution (Epochs)
+
+Rewards are distributed at the end of every epoch.
+
+An epoch on the NEAR blockchain is a fixed cycle of time used to organize validator activity and distribute rewards:
+
+* Each epoch lasts approximately 7.3 hours.
+* At the end of each epoch, rewards (Fee Rewards) are calculated and automatically credited to the wallet address used when deploying your validator’s staking contract.
+* These rewards are then auto-staked (compounded) in your validator contract.
+
+#### How to Unstake Your Rewards
+
+To withdraw your rewards, follow these steps:
+
+1. Log in to your NEAR wallet.
+2. Go to the Staking section.
+3. Review your staking positions and locate the rewards auto-staked (compounded) in your validator.
+4. Select the amount you want to unstake.
+5. Confirm the Unstake transaction.
+6. Once the unstake is complete, go back to the same section and click Withdraw.
+7. Your NEAR tokens will then appear in your wallet balance.
+
+
+<Aside type="note">
+
+⏳ Unstaking delay: It takes 2 to 4 epochs (\~20–30 hours) for the unstake process to complete.
+
+</Aside>
+
+
+#### Troubleshooting Visibility Issues
+
+If you cannot see your staking position (the auto-staked rewards) in your wallet:
+
+* Stake a small fraction of NEAR (&lt;0.1) into your validator from that same wallet.
+* This will refresh the view and allow your staking position (including rewards) to appear, so you can proceed with unstake and withdraw actions.
+
+
+
+✅ Key Takeaways for Node Runners
+
+* Check your dashboard regularly for updates.
+* Monitor disk usage and free up space when necessary.
+* Review logs and contact support if you see unusual errors or warnings.
+* Focus on endorsement performance → keep it above 95%, never below 70%.
+* Understand how Fee Rewards are calculated, and know how to unstake and withdraw them when needed.<br />

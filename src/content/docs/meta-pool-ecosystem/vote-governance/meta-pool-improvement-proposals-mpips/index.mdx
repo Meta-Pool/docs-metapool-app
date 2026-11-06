@@ -1,0 +1,111 @@
+---
+title: Meta Pool Improvement Proposals (MPIPs)
+description: MPIPs are community proposals to improve Meta Pool. Discuss and vote at metapool.app/mpip
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+The DAO voting UI is located here: [https://metapool.app/mpip](https://metapool.app/mpip)
+
+
+<Aside type="note">
+
+**Current path:** Submit and vote on MPIPs at [metapool.app/mpip](https://metapool.app/mpip). Older references to discussing proposals primarily via the Blockchain Operating System (BOS) are historical.
+
+</Aside>
+
+
+### What is a Meta Pool Improvement Proposal (MPIP)? <a href="#docs-internal-guid-54bafc2a-7fff-1705-4555-e7eab983df80" id="docs-internal-guid-54bafc2a-7fff-1705-4555-e7eab983df80"></a>
+
+A Meta Pool Improvement Proposal (MPIP) is an initiative that describes a suggestion or change intended to improve some aspect of the protocol. The proposals can come from community members, users or developers.
+
+Meta Pool Improvement Proposals promote a process for decision-making within the protocol, encouraging transparency, participation and open discussion on [https://www.metapool.app/mpip](https://www.metapool.app/mpip) section.
+
+### Objectives of the MPIPs
+
+Meta Pool aims for MPIPs to serve as the primary mechanism for proposing new features and protocol parameters changes. The goal is to establish a highly participatory and transparent process for complex decision making or changes to the Meta Pool Protocol, emphasizing a more decentralized approach.
+
+#### How does the voting mechanism on MPIPs work?
+
+MPIPs follow a voting mechanism called **Token-Based Quorum Voting**.
+
+Here are some pillars of this mechanism:
+
+* **Voting Power**: the foundation of this implementation of token-based quorum voting is the distribution of voting power based on the number of mpDAO tokens locked (amplified by the locking period used). **Voting power holders** are granted voting rights proportional to their holdings, which means those with more voting power have a greater say in decision making.
+* **Proposal Submissions and Discussion**: The first step in the voting process is the submission of proposals by any member of the community that reach the proposal thresholds - [_see Proposals Thresholds section_](./#proposal-thresholds)_._ Before the proposals enter a voting process, there is usually a period for discussing and refining the proposals to ensure clarity and feasibility.
+* **Voting Period and Votes Types**: A specific voting period is defined during which voting power holders can cast their votes on the proposals. Voters are given the options to vote “**For**”, “**Against**” or “**Abstain**”.
+* **Minimum Participation Quorum**: To validate the voting outcome and prevent decisions from being made by a small minority, a minimum participation threshold, known as Quorum. [_See Quorum section_](./#quorum-management).
+
+**Proposal Thresholds**
+
+Proposal thresholds are the criteria someone needs to meet in order to introduce a proposal that will be voted on. A proposer needs to hold a certain amount of voting power in order to introduce a proposal.
+
+Besides the required voting power, the proposer should deposit a certain amount of $NEAR for storage.
+
+The MPIPs thresholds are:
+
+* 200,000 Voting Power.
+* 5 $NEAR deposit for storage.
+
+
+<Aside type="note">
+
+These amounts may vary, please always check in the "**Proposal Metrics**" section.
+
+</Aside>
+
+
+**Quorum management**
+
+**First, what is a quorum?**
+
+“A quorum is the minimum number of participating members (or in most cases, tokens) required for a governing body to approve a proposal. If a quorum is set to 50%, this means that 50% of all circulating tokens need to vote yes for the proposal to pass. “
+
+In the MPIP context, a quorum is the minimum number or percentage of voting power required that must be cast in the voting process. If the Quorum is not met, the voting results may not be considered valid, and the proposal might be rejected.
+
+
+<Aside type="note">
+
+**Important:** there are 3 types of votes, **for, abstain and against**. The votes that count to exceed the quorum for a MPIP to be successful are:
+
+* The sum of the **for** and **abstain** votes must exceed the required quorum.
+* The votes of **for** must be greater than **against**.
+
+If these two premises are not fulfilled, the MPIP will be rejected.
+
+</Aside>
+
+
+E.g.: If the current circulating supply of voting power is 60,000 VP, and the MPIPs is set to 5% of quorum floor, the voting power required to approve a proposal is 3,000 VP.
+
+**Voting Power**
+
+MPIP participants have the ability to leverage their entire voting power in order to create proposals and cast votes. This implies that their voting power will be available even if it is being utilized on other voting processes within the DAO, such as Ambassador **Initiatives** voting, or **Validators** voting.
+
+Each voter has their entire voting power available at the moment to cast votes on proposals (MPIPs).
+
+During each voting session, the community can use the total voting power they possess, allowing them to use on multiple proposals if there are multiple active ones.
+
+**Getting Voting Power**: If you do not have voting power or if you want more, in this Link we explain how to obtain it.
+
+### How it works?
+
+#### How to participate in the MPIPs?
+
+In the MPIPs a member of the community can participate:
+
+* Creating a MPIPs.
+* Voting for MPIPs.
+* Both.
+
+#### MPIP Process
+
+The Proposal life cycle:
+
+* **Draft** - Authors submit a draft MPIP for community discussion, comments and polling (e.g.: Easy Poll). The xommunity and developer team provides feedback on the MPIP. If the draft MPIP has gained sufficient traction during the review window and after team review is been accepted, the MPIP goes to the voting stage.
+* **Cancelled** - If the proposal is not accepted, it will be canceled (only the Author or an Operator can cancel a MPIPs been in the Draft status).
+* **In progress** – Is the voting period. The proposal is opened for voting. Note: All feedback in the form of comments in the draft stage and polls are dumped on-chain into the proposal before the proposal vote begins.
+* **Succeeded** - The proposal has reached the quorum floor and the amount of "For" votes is greater than "Against" vote.
+* **Rejected** - The proposal has reached the quorum floor and the amount of "For" votes is lower than "Against" vote. Or the proposal has not reached the minimum quorum floor.
+
+<figure><img src="https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2FXMbqbNEIH47kHpwNAtKK%2Fdesarrollo%20FINAL-03%201.png?alt=media&#x26;token=6ae2e2e2-ab25-4797-aa10-3a167c808d15" alt="" /><figcaption></figcaption></figure>

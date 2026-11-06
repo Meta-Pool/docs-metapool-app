@@ -1,0 +1,77 @@
+---
+title: Delegation and Representation Ethereum address (Deprecated)
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+
+<Aside type="danger">
+
+**Deprecated — mpDAO on Ethereum.** mpDAO on Ethereum (the Ethereum ERC-20 token, the Uniswap pool, locking mpDAO / Voting Power on Ethereum, and delegating an Ethereum address to a NEAR account) is **deprecated**. Do not use it for new purchases, locks or votes. Meta Pool governance runs on **NEAR**: get, lock and vote with mpDAO on NEAR at [metapool.app/vote](https://www.metapool.app/vote). Any Ethereum details below are kept for historical reference only.
+
+</Aside>
+
+
+The Meta Pool DAO operates on NEAR, so (historically) to vote, the representation of the Ethereum account has to be delegated to a NEAR account. This way, you can vote, receive payments for voting, etc., without having to remove your assets from the Ethereum network.
+
+|                                                                          | NEAR                                                        | Ethereum                                                                                   |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **Vote**                                                                 | Vote on its Network. No representation delegation required. | Vote from the NEAR Network. Requires delegating representation to a NEAR account.          |
+| **Payments for Voting**                                                  | Can claim the voting payments on its own Network.           | Has to claim the voting payments on the NEAR network from the NEAR representative account. |
+| <p><strong>Manage lock position</strong><br />(Lock, unbond, withdraw)</p> | From its own network (NEAR).                                | From its own network (Ethereum).                                                           |
+
+### How does representation with my NEAR account work?
+
+Once your Ethereum account is delegated to your NEAR account, a new Drop Down in the Voting Power Dashboard appears on the NEAR representative network.
+
+<figure><img src="https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2FcVxhc46CubXaI45GTgdT%2Fimagen.png?alt=media&#x26;token=deb0c920-9383-495a-a652-d2e35846b9ed" alt="" /><figcaption></figcaption></figure>
+
+*   Account (Wallet) information: <img src="https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2F76sNWsNHLQpI9pCoPXOX%2Fimagen.png?alt=media&#x26;token=924d1669-55d0-449b-b222-f993d01aed4b" alt="" data-size="original" />
+
+    <figure><img src="https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2F7SMo7eIITsSQdkCl8Rle%2Fimagen.png?alt=media&#x26;token=683a31b7-34cb-46bf-ad4e-04da3b98de8f" alt="" /><figcaption></figcaption></figure>
+*   Network selector: ![](https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2FQrWOnWeuogM6H7KOeFFT%2Fimagen.png?alt=media\&token=3b0cc0bc-96f4-4f18-890d-321692dbc31f)
+
+    <figure><img src="https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2FCNNF7fgrg1lDsfl6EEIF%2Fimagen.png?alt=media&#x26;token=90da3fea-6e88-49a6-9161-b0ede3119959" alt="" /><figcaption></figcaption></figure>
+*   Account to represent selector: ![](https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2Fax5XfLpBMh6T85Pc2dBQ%2Fimagen.png?alt=media\&token=f44dbd40-76c5-4edd-92f6-f463925e467f)
+
+    <figure><img src="https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2F8fqDA9p2AdHFiSWXxL84%2Fimagen.png?alt=media&#x26;token=65a421d7-55ae-4ee5-b2d9-69ffd1be1e71" alt="" /><figcaption></figcaption></figure>
+
+#### Network selector
+
+The Network Selector is used to choose the network you will be working with. In the section "My Votes, it allows you to perform different transactions depending on the selected network.
+
+In this section, you could choose between NEAR or Ethereum. The Ethereum option is deprecated.
+
+With the _**Ethereum**_ network, you can:
+
+* Add Voting Power (Lock mpDAO)
+* Unbond your Locking Positions
+* Withdraw your mpDAOs.
+
+With the **NEAR** network, you can:
+
+* Represent multiple Ethereum accounts in addition to your own NEAR account.
+  * For Voting
+  * For claiming voting payments
+* For the NEAR account:
+  * Add Voting Power (Lock mpDAO)
+  * Unbond your Locking Positions
+  * Withdraw your mpDAOs.
+
+<figure><img src="https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2Fr1X1cfyZQ7kXg4xk6zQU%2FDelegate.drawio.png?alt=media&#x26;token=3da44e13-46e4-42a8-8914-4c75f5c73f44" alt="" /><figcaption></figcaption></figure>
+
+
+<Aside type="note">
+
+The payments for the votes must be claimed from the representative NEAR account. Never from the Ethereum network.
+
+</Aside>
+
+
+#### Account to represent selector
+
+From the NEAR network, you will be able to select which account you will be participating with in the Meta Pool DAO.
+
+You can choose to act with the NEAR account itself or any of the represented Ethereum accounts.
+
+The Ethereum accounts represented by the NEAR account can be recognized because they end with _**evmp.near**_. This account name consist of _**"your Ethereum account number"**_ + _**.evmp.near**_. This is because evmp.near are mirrored Ethereum accounts that allow you to vote on the NEAR network.

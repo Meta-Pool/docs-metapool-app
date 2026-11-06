@@ -1,0 +1,76 @@
+---
+title: Delayed Unstake
+description: Traditional Unstake
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+**NEAR Chain**: Delayed Unstake is the default form of unstaking from any validator on the NEAR protocol: due to the design of the network, validators wait 4 - 6 epochs (_**48-72 hours**_) before releasing the staked funds back to the user. Delayed unstaking is **fee free** for all users. During the unstake period you will not generate rewards.
+
+**AURORA Chain**: Delayed unstake that takes a _**maximum of 4 days**_, there are no fees, but during the unstake period you will not generate rewards. $stAURtokens are managed and holded by the $stAUR contract in a non-custodial service. Any user is able to redeem their $AURORA tokens through the unstake service at any time.
+
+**ETHEREUM Chain**: Delayed unstake that takes _**aprox. of 14 days**_, there are no fees, but during the unstake period you will not generate rewards. Any user is able to redeem their $spETH tokens through the unstake service at any time.
+
+**ICP Chain:** Meta Pool estimates a maximum time for ustake, but the _**delayed unstake time cannot be predicted**_ before the action is performed, due to how the ICP protocol works. Prior to delayed unstaking there is no way to get an accurate time estimate, because the withdrawal orders are queued among all the requests to be processed. But when the ICP staked volume increases, all those orders are filled and that time decreases substantially. During the unstake period you will not generate rewards
+
+**STORY PROTOCOL Chain**: Delayed unstake that takes _**aprox. of 14 days**_, there are no fees, but during the unstake period you will not generate rewards. Any user is able to redeem their $stIP tokens through the unstake service at any time.
+
+**SOLANA Chain:** see [Unstake Leveraged mpSOL](../leveraged-stake-aggregator/unstake-leveraged-mpsol.md)
+
+**To withdraw your funds from Meta Pool using Delayed Unstake simply:**
+
+1. **Token selection:** Choose the token of your preference. Note that by default the staking is in the $IP token, but make sure to select the desired token.&#x20;
+
+<figure><img src="/assets/image%20%2881%29.png" alt="" /><figcaption></figcaption></figure>
+
+1. Select the _**Unstake**_ option and then the _**Delayed Unstake**_ option.
+2. Enter the **amount of the LST** (stIP, stNEAR, stAUR, spETH, mpSOL or stICP) you wish to unstake. View the estimated time to make the withdrawal.
+3. Click the **Unstake** button and approve the transaction.&#x20;
+
+<figure><img src="/assets/image%20%2880%29.png" alt="" /><figcaption></figcaption></figure>
+
+<figure><img src="/assets/image%20%2882%29.png" alt="" /><figcaption></figcaption></figure>
+
+1. Now you can view the **status of your delayed unstake** and the **remaining time** to make the withdrawal (Some are seen directly in the Withdraw section and/or in the Dashboard section.).&#x20;
+
+<figure><img src="/assets/image%20%2884%29.png" alt="" /><figcaption></figcaption></figure>
+
+1. After the specified time, you can **make the withdrawal**. Your transaction will be confirmed by the blockchain, you'll have your original Digital Asset + staking rewards on your wallet.&#x20;
+
+<figure><img src="/assets/Withdraw.PNG" alt="" /><figcaption></figcaption></figure>
+
+
+<Aside type="caution">
+
+NEAR: If there is a delayed unstake in progress and another is requested, note that the amounts are added, but the time is reset for both.
+
+</Aside>
+
+
+<figure><img src="/assets/image%20%2885%29.png" alt="" /><figcaption></figcaption></figure>
+
+
+<Aside type="caution">
+
+Another delayed unstake cannot be requested, if there is a withdrawal pending to be executed (Not for Story Protocol, there can be up to 4 at the same time.).&#x20;
+
+</Aside>
+
+
+<figure><img src="/assets/image%20%28192%29.png" alt="" /><figcaption></figcaption></figure>
+
+
+<Aside type="tip">
+
+The delayed unstake status can be also view in the dashboard section.
+
+</Aside>
+
+
+<figure><img src="/assets/image%20%2886%29.png" alt="" /><figcaption></figcaption></figure>
+
+## Add Reminder
+
+If you press the "**Add reminder**" button in your Pending Withdraw, you will be given an option to add a reminder to your Google calendar.
+
+<figure><img src="/assets/image%20%2887%29.png" alt="" /><figcaption></figcaption></figure>

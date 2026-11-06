@@ -1,0 +1,81 @@
+---
+title: Voting in Meta Pool
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+The Meta Pool DAO operates on NEAR. Vote with Voting Power on the **NEAR** network, as explained below.
+
+
+<Aside type="danger">
+
+**Deprecated:** mpDAO on Ethereum is deprecated. Use mpDAO on **NEAR** ([metapool.app/vote](https://www.metapool.app/vote)). Ethereum mpDAO details on this page are historical.
+
+</Aside>
+
+
+### Voting with Voting Power in NEAR network
+
+1. If you don't have Voting Power yet, connect your NEAR wallet to lock your mpDAO tokens and get Voting Power (see [here](../#how-to-use-mpdao-vote) how to lock your mpDAO).
+2. Go to the Meta Pool product you want to vote for. Vote for validators, Grants, [MPIPs](../meta-pool-improvement-proposals-mpips/), or projects in the Launchpad (_Returning soon_) to get rewards.
+
+You are already participating with your vote in Meta Pool DAO.
+
+**You can see your voted positions in My Votes tab from My Votes section.**
+
+<figure><img src="https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2FqIIupnyJv0hjpY3ScL3P%2Fimage.png?alt=media&#x26;token=3d48ffa3-3e41-47b8-9b2d-9549ad32aee1" alt="" /><figcaption></figcaption></figure>
+
+### Voting with Voting Power in Ethereum network (Deprecated)
+
+
+<Aside type="danger">
+
+**Deprecated — mpDAO on Ethereum.** mpDAO on Ethereum (the Ethereum ERC-20 token, the Uniswap pool, locking mpDAO / Voting Power on Ethereum, and delegating an Ethereum address to a NEAR account) is **deprecated**. Do not use it for new purchases, locks or votes. Meta Pool governance runs on **NEAR**: get, lock and vote with mpDAO on NEAR at [metapool.app/vote](https://www.metapool.app/vote). Any Ethereum details below are kept for historical reference only.
+
+</Aside>
+
+
+Historically, in order to vote with Voting Power in Ethereum, you need to _**delegate**_ your Ethereum account and have it represented by a NEAR account.
+
+1. If you don't have Voting Power yet, connect your Ethereum wallet to lock your mpDAO tokens and get Voting Power (see [here](../#how-to-use-mpdao-vote) how to lock your mpDAO and to get mpDAO).
+2. Delegate your Ethereum account to be represented by a NEAR account. Here we explain how.
+3. Vote with your Ethereum mpDAO with your NEAR representative account.
+4. Go to the Meta Pool product you want to vote for. Vote for validators, Grants, [MPIPs](../meta-pool-improvement-proposals-mpips/), or projects in the Launchpad to get rewards.
+
+You are already participating with your vote in Meta Pool DAO.
+
+**You can see your voted positions in My Votes, My Votes section (From your NEAR representative account).**
+
+<figure><img src="https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2F7YWNCwxsNSXeKToSujco%2Fimage.png?alt=media&#x26;token=b01eae1c-d9a3-49a8-b201-e5ca0d271f6b" alt="" /><figcaption></figcaption></figure>
+
+<p align="center">Still without votes and showing the active products to vote.</p>
+
+<figure><img src="https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2FYKlxlqsTxUmN0TWvUKRi%2Fimage.png?alt=media&#x26;token=d6414cb2-b608-47f2-8dce-c01cbe4f4ddc" alt="" /><figcaption></figcaption></figure>
+
+<p align="center">Ethereum account view represented with votes.</p>
+
+### **Refresh your Votes**
+
+#### Phase 1: Vote Position Timestamp
+
+The first phase of the **mpip-16** development added to all voting positions the corresponding date on which the transaction that originates the voting position is signed. With this new data included in our contract, we can now perform a cleanup of DAO participants’ voting positions whose age exceeds the 60-day threshold.
+
+#### Phase 2: Refresh Functionality
+
+The second phase of the **mpip-16** development added the **“refresh”** functionality to the contract, allowing DAO participants to revalidate their voting positions on Validators. This updates the issue date of this type of voting position and prevents it from being cleaned up due to age.
+
+> ⚠️ Voting positions on **grants & memes** cannot be revalidated.
+
+#### Phase 3: Cleanup Bot
+
+The third phase of the **mpip-16** development consisted of creating a bot that runs once a day, scanning all voting positions and deleting those older than the 60-day threshold.
+
+
+<Aside type="note">
+
+All voting positions were updated with an issue date of **08/01/2025**. Therefore, after 60 days from that date, the votes will be deleted (with the possibility of revalidating voting positions on Validators).
+
+</Aside>
+
+
+<figure><img src="https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2FwvUczeasonYUxf2iYktM%2FScreenshot%202025-09-09%20at%204.40.38%E2%80%AFPM.png?alt=media&#x26;token=ee984f8c-2bbd-4ec3-9e6e-12592122c305" alt="" /><figcaption></figcaption></figure>

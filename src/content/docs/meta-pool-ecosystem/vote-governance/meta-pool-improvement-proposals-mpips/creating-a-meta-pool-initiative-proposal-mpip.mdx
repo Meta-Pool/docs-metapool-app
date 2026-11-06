@@ -1,0 +1,130 @@
+---
+title: Creating a Meta Pool Initiative Proposal (MPIP)
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+1\.     Go to: [https://www.metapool.app/mpip](https://www.metapool.app/mpip) Select +Create Proposal&#x20;
+
+<figure><img src="/assets/Screenshot%202026-02-12%20at%2011.32.06%E2%80%AFPM.png" alt="" /><figcaption></figcaption></figure>
+
+**Proposal metrics:**
+
+* **Current Quorum** needed of the circulating supply. [_See quorum management section_](./#quorum-management).
+*   **Proposal thresholds in Voting Power**. Amount of voting power needed in order to introduce a proposal. The proposer needs only to hold this amount.
+
+    Please note that it is also required: the proposer should deposit a certain amount of **$NEAR for storage**.
+
+    The indicated Voting Power is the total voting power that the Proposer has available even if it is being used on other voting processes within the DAO. [_See proposal threshold_](./#proposal-thresholds) _section_ and [_voting power section_](./#voting-power)_._
+* **Voters / VP Holders**: Number of voters and number of Voting Power holders.
+
+**All Proposals**: Proposal list ordered by MPIP Id descending.
+
+2\.     **Connect your NEAR wallet** by clicking the Sign In button or if you do not have an Account yet, create one by clicking the Create Account button.
+
+![](/assets/image%20%2895%29.png)
+
+3. **Choose your preferred wallet.**
+
+<figure><img src="/assets/image%20%2896%29.png" alt="" /><figcaption></figcaption></figure>
+
+**Balance**: Voting Power balance + NEAR balance. Once the wallet is connected, you can see, up to the right, the balance that the user has of Voting Power and NEAR associated with that wallet.
+
+![](/assets/image%20%2897%29.png)
+
+4. Click on “**Create Proposal” button**.
+
+![](/assets/image%20%2898%29.png)
+
+
+<Aside type="note">
+
+**Important**: In order to create an MPIP, the proposer should have enough voting power and a certain amount of NEAR ([_see Proposal Thresholds section_](./#proposal-thresholds)).
+
+</Aside>
+
+
+5. A MPIP proposal consist of:
+
+* **Proposer**: a creator (or author) account.
+* **Title**. Required.
+* **Short description**: a one-line human readable description. Required.
+* **Description**: a body description containing technical specification of the feature or protocol parameters changes. Required.
+* **Function Call Data**: could contains call data encoding a function call that the contract will perform if the proposal pass.
+
+<figure><img src="/assets/Screenshot%202026-02-12%20at%2011.33.43%E2%80%AFPM.png" alt="" /><figcaption></figcaption></figure>
+
+6\.     **Create Proposal**: Once all the required information is completed and the proposer has the necessary Threshold (Voting Power and NEAR for storage), pressing the Create Proposal button generates the MPIP.
+
+
+<Aside type="note">
+
+**Important:** once the necessary fields have been completed, the amount of NEAR required for storage appears under the create proposal button. Amount that will be requested when creating the proposal.
+
+</Aside>
+
+
+<figure><img src="/assets/Screenshot%202026-02-12%20at%2011.33.43%E2%80%AFPM.png" alt="" /><figcaption></figcaption></figure>
+
+7. **“Confirm” the transaction of the proposal** and then "Approve" the transaction in your wallet.
+
+<figure><img src="/assets/image%20%28101%29.png" alt="" /><figcaption></figcaption></figure>
+
+<figure><img src="/assets/image%20%28102%29.png" alt="" /><figcaption></figcaption></figure>
+
+8. **Succeed** you have created a MPIP.
+
+![](/assets/image%20%28103%29.png)
+
+9. **Congratulations**, your proposal is now on the proposal list with status, Draft.
+
+## Proposal View
+
+Once the MPIP has been submitted, clicking on the proposal in the dashboard/list opens a view of the selected proposal. This is the view that the proposal has, of its proposed MPIP.
+
+<figure><img src="/assets/Screenshot%202026-02-12%20at%2011.34.57%E2%80%AFPM.png" alt="" /><figcaption></figcaption></figure>
+
+**The MPIP detail’s view is composed by 5 cards or sections:**
+
+1. Options buttons:
+   * **Edit**: This button allows the editing of the MPIP, as long as it is in the Draft status.
+   * **Cancel**: Allows the proposer to cancel his submitted MPIP as long as it is in the Draft status. It should be noted that an Operator also has the power to cancel an MPIP that is not correctly prepared or submitted.
+   * **Start voting**: This button starts the voting period. Once the voting period is activated, the possibility of receiving feedback from the community is blocked.
+2. **Proposal details**: information, status and discussion subsection.
+3. **Vote section**: it allows the voter to cast a vote, show the vote and remove vote if already did.
+4. **Voting period**: it shows the voting period time status. It will show if the voting period has started, has finished or the remaining days to vote if the voting period is in progress.
+5. **Vote results**: it shows the number of votes per vote type with a progress bar representing the number of votes. Quorum: it keeps the desired quorum to reach to approve the proposal.&#x20;
+
+
+<Aside type="note">
+
+_**This Quorum value is calculated as a snapshot once the proposal is moved to the voting period.**_
+
+</Aside>
+
+
+6. **Votes**: it lists the votes casted. It includes who votes, which type of vote, the memo (if it exists), and the total amount of voting power.
+
+## Start the voting period
+
+A Proposer can only start an MPIP if it was submitted by it.
+
+The Proposer sees this screen once they choose the project to start for voting.
+
+<figure><img src="/assets/Screenshot%202026-02-12%20at%2011.34.57%E2%80%AFPM.png" alt="" /><figcaption></figcaption></figure>
+
+1. Click on the **Start Voting** button.
+
+<figure><img src="/assets/image%20%28107%29.png" alt="" /><figcaption></figcaption></figure>
+
+2. **Confirm the transaction.**
+
+<figure><img src="/assets/image%20%28108%29.png" alt="" /><figcaption></figcaption></figure>
+
+3. **Approve the wallet transaction**.
+
+![](/assets/image%20%28109%29.png)
+
+4. Done, your MPIP is ready to receive votes from the community.
+
+<figure><img src="/assets/Screenshot%202026-02-12%20at%2011.34.57%E2%80%AFPM.png" alt="" /><figcaption></figcaption></figure>

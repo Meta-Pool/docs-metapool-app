@@ -1,0 +1,58 @@
+---
+title: Ethereum Network
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+#### Meta Pool on Ethereum (spETH)
+
+Meta Pool provides liquid staking on Ethereum. Stake ETH and receive **spETH**, a yield-bearing LST that accrues staking rewards while remaining usable in DeFi.
+
+* **Stake / unstake:** [metapool.app](https://www.metapool.app)
+* **Product docs:** spETH — benefits, liquidity pool for fast unstake, true price (ERC-4626), delayed unstake
+* **Historical alternate UI:** Liquid Staking in BOS (NEAR Social widget; prefer metapool.app)
+
+Meta Pool ETH staking uses distributed validators (including SSV Network integration, as noted elsewhere in these docs). You do **not** need to run your own 32 ETH validator to hold spETH.
+
+***
+
+#### Appendix: Ethereum client background
+
+The Ethereum Network is composed of two layers, Execution Layer and Consensus Layer, both working together with their own clients.
+
+To run a full Ethereum validator yourself (not required for Meta Pool liquid staking), you need a validator connected to a full node running both Consensus and Execution clients.
+
+<figure><img src="https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2FpwGcA5m4VFGOXeKii7JU%2Fdesarrollo%20FINAL-16%201.png?alt=media&#x26;token=8ad8cd04-e1a3-41a4-a096-1f8a38bceb62" alt="" /><figcaption></figcaption></figure>
+
+**Execution Client**
+
+The execution client (also known as the Execution Engine, EL client or formerly the Eth1 client) listens to new transactions broadcasted in the network, executes them in EVM, and holds the latest state and database of all current Ethereum data.
+
+| Client                                          | Language | Operating systems     | Networks                   | Sync strategies                    | State pruning   |
+| ----------------------------------------------- | -------- | --------------------- | -------------------------- | ---------------------------------- | --------------- |
+| [Geth](https://geth.ethereum.org/)              | Go       | Linux, Windows, macOS | Mainnet, Sepolia           | Snap, Full                         | Archive, Pruned |
+| [Nethermind](http://nethermind.io/)             | C#, .NET | Linux, Windows, macOS | Mainnet, Sepolia, and more | Snap (without serving), Fast, Full | Archive, Pruned |
+| [Besu](https://besu.hyperledger.org/en/stable/) | Java     | Linux, Windows, macOS | Mainnet, Sepolia, and more | Snap, Fast, Full                   | Archive, Pruned |
+| [Erigon](https://github.com/ledgerwatch/erigon) | Go       | Linux, Windows, macOS | Mainnet, Sepolia, and more | Full                               | Archive, Pruned |
+
+
+<Aside type="note">
+
+**Deprecated testnets:** Goerli, Ropsten, and Pyrmont are historical/deprecated Ethereum testnets and are omitted from the tables above. Prefer Sepolia (and other currently supported testnets) for development.
+
+</Aside>
+
+
+**Consensus Client**
+
+The consensus client (also known as the Beacon Node, CL client or formerly the Eth2 client) implements the proof-of-stake consensus algorithm, which enables the network to achieve agreement based on validated data from the execution client.
+
+| Client                                                        | Language   | Operating systems     | Networks                                |
+| ------------------------------------------------------------- | ---------- | --------------------- | --------------------------------------- |
+| [Lighthouse](https://lighthouse.sigmaprime.io/)               | Rust       | Linux, Windows, macOS | Beacon Chain, Sepolia, and more         |
+| [Lodestar](https://lodestar.chainsafe.io/)                    | TypeScript | Linux, Windows, macOS | Beacon Chain, Sepolia, and more         |
+| [Nimbus](https://nimbus.team/)                                | Nim        | Linux, Windows, macOS | Beacon Chain, Sepolia, and more         |
+| [Prysm](https://docs.prylabs.network/docs/getting-started/)   | Go         | Linux, Windows, macOS | Beacon Chain, Gnosis, Sepolia, and more |
+| [Teku](https://consensys.net/knowledge-base/ethereum-2/teku/) | Java       | Linux, Windows, macOS | Beacon Chain, Gnosis, Sepolia, and more |
+
+A consensus client serves as a Beacon Node for validators to connect. Each consensus client has its own validator software described in detail in its respective documentation.

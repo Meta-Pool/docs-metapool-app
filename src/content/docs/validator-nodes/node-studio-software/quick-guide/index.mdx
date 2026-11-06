@@ -1,0 +1,237 @@
+---
+title: Quick Guide
+description: This guide will walk you step by step through deploying your own NEAR validator node on mainnet, using the Meta Pool Node Studio tool developed in collaboration with Openmesh.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+### ✨ Introduction <a href="#introduction" id="introduction"></a>
+
+In this guide, you’ll learn how to launch your NEAR validator node using Meta Pool Node Studio. The process is fully online, simple, intuitive, and avoids complex technical steps.
+
+#### Requirements <a href="#requirements" id="requirements"></a>
+
+* Web3 wallet compatible with Ethereum (e.g., MetaMask) or Google Account
+* Wallet compatible with NEAR (e.g., Meteor Wallet)
+* Verified account with VPS provider (Hivelocity, Hetzner or Cherry Servers)
+
+***
+
+### 🏗️ Step 1: Choose Your Infrastructure Provider
+
+Node Studio currently supports **two VPS providers**.\
+Please choose one to continue with the setup process:
+
+* **Hivelocity \[Option A] —** [**Click here for instructions**](hetzner.md)\
+  Machine: **pro.md.amd**\
+  Specs: 4-Core CPU, 8 GB RAM, 80 GB Storage (1x 80 GB NVMe), 1 Gbps Networking, 10000 GB Bandwidth\
+  Approx. cost: **USD 15/month**
+*   **Cherry Servers \[Option B] —** [**Click here for instructions**](cherry-servers.md)
+
+    Machine: Cloud VPS 6 (Gen 2)\
+    Specs: 6-Core CPU, 6 GB RAM, 100 GB Storage (1x 100 GB SSD), 1 Gbps Networking, 1,024 GB Bandwidth\
+    Approx. cost: **USD 11.8/month** (VAT not included for EU residents)
+* **Hetzner \[Option C] —** [**Click here for instructions**](hetzner.md)\
+  Machine: **cx33**\
+  Specs: 4-Core CPU, 8 GB RAM, 80 GB Storage (1x 80 GB SSD), 20480 GB Bandwidth\
+  Approx. cost: **USD 8.37/month**
+
+
+<Aside type="note">
+
+💡 **Note:** Prices may vary over time depending on provider adjustments.
+
+</Aside>
+
+
+
+<Aside type="caution">
+
+⚠️ **Important:**
+
+* Hivelocity is considered **more crypto-friendly**, but includes an **extra step** in the setup process.
+* **Cherry Servers** allows crypto payments and requires mandatory identity verification (KYC) before usage.
+* Hetzner is **not a crypto-friendly** provider. Users are responsible for evaluating whether it suits their needs. In some cases, hosting validator nodes may require migration to another provider in the future.
+
+</Aside>
+
+
+***
+
+### 🛠️ Step 2: Connect to Node Studio <a href="#deploy-an-xnode-on-openmesh" id="deploy-an-xnode-on-openmesh"></a>
+
+2.1 Go to the Node Studio Home page. [https://near.xnode.openmesh.network/](https://near.xnode.openmesh.network/)
+
+2.2 Log in using either:
+
+* An EVM-compatible wallet (e.g., MetaMask) or
+* Your Google account.
+
+2.3 Sign the authentication request.
+
+***
+
+### 🛠️ Step 3: Deploy Your VPS
+
+3.1 On the Home page of [Node Studio](https://near.xnode.openmesh.network/), click Deploy.
+
+3.2 Choose a CherryServers, Hivelocity or Hetzner VPS\
+Select any plan that includes at least:
+
+* 4-Core CPU
+* 6 GB RAM
+* 80 GB Storage (1x 80 GB) or (1x 80 GB NVMe)
+* 1 Gbps Networking
+* 10,000 GB Bandwidth
+
+3.3 Click Next
+\
+After selecting your VPS, continue with the on-screen instructions using the Next button.
+
+3.4 Link your Hivelocity, Cherry or Hetzner account\
+You must link your account with the API Key/Token you previously saved. If you don’t have it, you can generate a new one.
+
+3.5 Rent the server
+\
+Click the Rent Server button (⚠️ only once! to avoid renting multiple VPS).&#x20;
+
+3.6 Node Studio will automatically:
+
+* Rent the VPS using your API key.
+* Install the operating system.
+* Set up all packages needed for the NEAR validator.
+
+
+<Aside type="note">
+
+⚠️ This process usually takes \~10 minutes.
+
+During this time:
+
+* Your VPS will appear listed on the Node Studio Home page (Cherry and Hetzner Users).
+* Once visible, click on it to enter the Dashboard, where you continue the validator installation.
+
+</Aside>
+
+
+
+<Aside type="caution">
+
+**Hivelocity Users (extra step) If for any reason your VPS doesn’t appear automatically on Node Studio Home a few minutes after the rental is executed, you need to import it manually.**
+
+</Aside>
+
+
+To do this, follow these steps:
+
+1. Go to your Hivelocity account and find your **numeric IP address** here: [https://my.hivelocity.net/devices](https://my.hivelocity.net/devices)
+2. Copy the IP address.
+3. Go to **Node Studio**, click **Import**, paste the numeric IP address, and confirm.
+
+***
+
+### 🛠️ Step 4: Set Your Subdomain <a href="#highly-recommended-point-a-domain-to-the-node" id="highly-recommended-point-a-domain-to-the-node"></a>
+
+Once in the Node Studio Dashboard, the first step is to set a subdomain. This improves security and ensures encrypted communication between your VPS, the validator, and Node Studio.
+
+4.1 Locate the Subdomain field in the Dashboard.
+
+4.2 Enter the name you want for your subdomain.
+
+4.3 Click Claim to save it.
+
+
+<Aside type="note">
+
+⚠️ Important:
+
+* The process may take a few minutes to complete.
+* Do not close or refresh the page until the subdomain is fully set.
+
+</Aside>
+
+
+***
+
+### 🛠️ Step 5: Configure Your Pool <a href="#near-node-configuration" id="near-node-configuration"></a>
+
+5.1 Enter a name for your validator in the **“pool ID”** field.
+
+* Must be unique and appropriate:
+  * Do not use “Meta Pool,” offensive terms, or third-party brand names.
+  * Only the following special characters are allowed: - (dash) and \_ (underscore).
+  * Do not use dots (.) or any other special characters.
+
+5.2 Select pool type:
+
+* pool.near → upgradeable version, lower cost; recommended.
+* poolv1.near → legacy contract, higher cost.
+
+5.3 Optional: Enable Pinger (sends automatic ping every epoch, \~7.3h).
+
+* Has a small NEAR cost from your wallet.
+* Not required; Meta Pool provides free automated pings.&#x20;
+* **Recommended: do not enable.**
+
+5.4 Set Reward Fee (validator commission).
+
+* ⚠️ Maximum allowed for Meta Pool program: 7%.
+
+***
+
+### 🛠️ Step 6: Manage Your Node <a href="#pool-configuration" id="pool-configuration"></a>
+
+6.1 Click Update OS to configure the system.
+
+6.2 Click Deploy NEAR App to install the validator software.
+
+***
+
+### 🛠️ Step 7: Deploy Your Staking Pool <a href="#wait-for-synchronization" id="wait-for-synchronization"></a>
+
+7.1 Go to "Manage Pool" section.
+
+7.2 Connect your NEAR wallet.
+
+7.3 Ensure the wallet has at least 5 NEAR.
+
+7.4 Click Deploy Pool.
+
+
+<Aside type="note">
+
+⚠️ Important:
+
+* This wallet becomes the contract owner: only it can modify the staking pool or receive fees. Secure your seed phrase.
+* Data from Configure Pool is used to create the staking contract.
+  * Pool ID and pool type cannot be changed later.
+  * Reward fee can be updated.<br />
+
+</Aside>
+
+
+> ✅ **Done!** If you’ve followed all the steps, your validator node should now be synced and fully operational. It’s ready to start receiving stake and participating in block validation on the NEAR network.
+
+***
+
+### 🛠️ Step 8: Confirm With Meta Pool team (for pre-approved program users only) <a href="#delegate-funds-to-the-validator" id="delegate-funds-to-the-validator"></a>
+
+8.1 Once the validator is running, send a screenshot of the logs to the Meta Pool team.
+
+8.2 The team has 10 days to delegate the seat price.
+
+8.3 Once delegated, your validator enters the active set on NEAR.
+
+***
+
+### ℹ️ Troubleshooting <a href="#troubleshooting" id="troubleshooting"></a>
+
+* **My node doesn’t appear**: Wait up to 30 minutes. Ensure your Web3 wallet is connected properly.
+* **Node isn’t syncing**: Make sure the OS patch was applied correctly.
+* **Can’t create pool**: Check that your wallet has enough NEAR.
+
+***
+
+### 🚀 Support and Contact <a href="#support-and-contact" id="support-and-contact"></a>
+
+If you have questions or need help, feel free to contact us at our validator Telegram group: [https://t.me/MetaPoolOfficialGroup](https://t.me/MetaPoolOfficialGroup)
