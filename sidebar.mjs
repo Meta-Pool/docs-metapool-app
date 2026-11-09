@@ -15,23 +15,6 @@ export default [
         "slug": "welcome-to-meta-pool/what-are-liquid-staking-protocols"
       },
       {
-        "label": "Historical (2024)",
-        "items": [
-          {
-            "label": "Historical (2024)",
-            "slug": "welcome-to-meta-pool/historical-2024"
-          },
-          {
-            "label": "Q1 2024 Milestones (Historical)",
-            "slug": "welcome-to-meta-pool/historical-2024/q1-2024-milestones"
-          },
-          {
-            "label": "Q2 2024 Milestones (Historical)",
-            "slug": "welcome-to-meta-pool/historical-2024/q2-2024-milestones"
-          }
-        ]
-      },
-      {
         "label": "Manifest and Values",
         "slug": "welcome-to-meta-pool/manifest-and-values"
       },
