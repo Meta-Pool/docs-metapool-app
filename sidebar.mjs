@@ -864,7 +864,7 @@ export default [
           },
           {
             "label": "Medium",
-            "link": "https://medium.com/@meta_pool",
+            "link": "https://medium.com/@metapool.app",
             "attrs": {
               "target": "_blank"
             }

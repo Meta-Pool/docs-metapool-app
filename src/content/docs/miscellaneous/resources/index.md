@@ -14,7 +14,7 @@ Useful Meta Pool resources:
 #### Blog & media
 
 * [Meta Pool Blog](https://blog.metapool.app/)
-* [Medium](https://medium.com/@meta_pool)
+* [Medium](https://medium.com/@metapool.app)
 * [YouTube](https://www.youtube.com/@MetaPoolNEARliquidstaking)
 
 #### Socials
