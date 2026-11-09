@@ -38,7 +38,7 @@ In Meta Pool value is captured in three ways:&#x20;
 1. Fees that come from staking rewards in multiple chains.&#x20;
 2. Liquid Unstaking fees which will be variable \~0.3% - 3% (depends on existing liquidity and operation amount, similar to standard swap pools).&#x20;
 3. The revenue generated on the platform from staking and liquidity pool fees is sent to the Treasury and handled by the smart contract in the form of stNEAR tokens.
-4. Most of the protocol fees (60%) are paid to mpDAO holders for voting in the governance. See [Vote to Earn](../../welcome-to-meta-pool/vote-to-earn.md)
+4. Protocol fees paid to mpDAO holders for voting are defined in [MPIP-32](https://www.metapool.app/mpip?id=32). See [Vote to Earn](../../welcome-to-meta-pool/vote-to-earn.md)
 
 </details>
 

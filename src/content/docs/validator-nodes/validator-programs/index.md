@@ -10,4 +10,4 @@ The program distributes delegations from Meta Pool’s to validators who meet tr
 
 **Node Studio cohorts**
 
-Node Studio is documented as shared program material with separate cohort pages (**Program #1**, **#2**, **#3**). Program #1 is **closed/historical**; #2/#3 pages keep cohort-specific published terms (including historical fee/delegation figures). Live product and current marketing: [nodestudio.metapool.app](https://nodestudio.metapool.app/).
+Node Studio is documented as shared program material with separate cohort pages (**Program #2** and **#3**). Those pages keep cohort-specific published terms (including historical fee/delegation figures). Live product and current marketing: [nodestudio.metapool.app](https://nodestudio.metapool.app/).

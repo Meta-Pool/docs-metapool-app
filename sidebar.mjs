@@ -15,23 +15,6 @@ export default [
         "slug": "welcome-to-meta-pool/what-are-liquid-staking-protocols"
       },
       {
-        "label": "Historical (2024)",
-        "items": [
-          {
-            "label": "Historical (2024)",
-            "slug": "welcome-to-meta-pool/historical-2024"
-          },
-          {
-            "label": "Q1 2024 Milestones (Historical)",
-            "slug": "welcome-to-meta-pool/historical-2024/q1-2024-milestones"
-          },
-          {
-            "label": "Q2 2024 Milestones (Historical)",
-            "slug": "welcome-to-meta-pool/historical-2024/q2-2024-milestones"
-          }
-        ]
-      },
-      {
         "label": "Manifest and Values",
         "slug": "welcome-to-meta-pool/manifest-and-values"
       },
@@ -109,23 +92,6 @@ export default [
           {
             "label": "Professional Node Operators Program",
             "slug": "validator-nodes/validator-programs/professional-node-operators-program"
-          },
-          {
-            "label": "Node Studio Program #1 (Closed / Historical)",
-            "items": [
-              {
-                "label": "Node Studio Program #1 (Closed / Historical)",
-                "slug": "validator-nodes/validator-programs/node-studio-program-1"
-              },
-              {
-                "label": "Participation Guidelines",
-                "slug": "validator-nodes/validator-programs/node-studio-program-1/participation-guidelines"
-              },
-              {
-                "label": "Monthly Payment",
-                "slug": "validator-nodes/validator-programs/node-studio-program-1/monthly-payment"
-              }
-            ]
           },
           {
             "label": "Node Studio Program #2",
@@ -864,7 +830,7 @@ export default [
           },
           {
             "label": "Medium",
-            "link": "https://medium.com/@meta_pool",
+            "link": "https://medium.com/@metapool.app",
             "attrs": {
               "target": "_blank"
             }
