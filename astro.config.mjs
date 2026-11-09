@@ -10,6 +10,26 @@ export default defineConfig({
 			title: 'Meta Pool Docs',
 			description:
 				'Meta Pool objective is to provide easy and permissionless access to Web3 financial tools for everybody',
+			favicon: '/favicon.png',
+			head: [
+				{
+					tag: 'link',
+					attrs: {
+						rel: 'icon',
+						href: '/favicon.png',
+						type: 'image/png',
+						sizes: '512x512',
+					},
+				},
+				{
+					tag: 'link',
+					attrs: {
+						rel: 'apple-touch-icon',
+						href: '/apple-touch-icon.png',
+						sizes: '512x512',
+					},
+				},
+			],
 			sidebar,
 			plugins: [starlightLlmsTxt({ projectName: 'Meta Pool' })],
 			components: {
