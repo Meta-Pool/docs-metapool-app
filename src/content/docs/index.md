@@ -1,13 +1,12 @@
 ---
 title: What is Meta Pool?
-description: Meta Pool objective is to provide easy and permissionless access to Web3 financial tools for everybody
+description: "Metapool is a DAO dedicated to promote decentralized tools to empower sovereign individuals and financial freedom."
 ---
 
-Meta Pool is a multi-chain, **Liquid-Staking Based Ecosystem,** it includes:
+Metapool is a DAO dedicated to promote decentralized tools to empower sovereign individuals and financial freedom.
 
-* **Vote-to-Earn,** an attractive DAO governance paying to participants.
-* **Liquid Staking Tokens,** in NEAR, Story Protocol ($IP), Ethereum, Solana, Aurora and ICP.
-* **Liquidity Pools**, allowing everyone to be a liquidity provider.
-* **Leveraged Stake,** Solana Stake Aggregator. Extra yield on mpSOL, jitoSOL, bSOL and SOL.
+Meta Pool keeps a few of those tools in one place. You can liquid-stake NEAR, Solana, or Ethereum and receive a token you can use while the stake earns rewards. If you hold mpDAO, you can vote and propose. Those decisions are on-chain Meta Pool Improvement Proposals (MPIPs).
 
-The Meta Pool DAO of today allows the user to liquid-stake with the same simple and approachable interface in Ethereum, NEAR, Solana, Aurora, ICP, and Q, with constant expansion to more blockchains.
+The DAO also runs programs around that. [Build Buddies](https://buildbuddies.metapool.app/) are in-person meetups in Latin America and Asia, for meeting, learning, and working together. [Node Studio](./validator-nodes/node-studio-software/) is a way to run a validator without managing a server. The Metapool Incubator is where builders work alongside the DAO: projects are reviewed, then followed through weekly milestones.
+
+Start in the [Meta Pool app](https://www.metapool.app). For more, read [Stake](./meta-pool-ecosystem/stake/) and [Vote and governance](./meta-pool-ecosystem/vote-governance/).
