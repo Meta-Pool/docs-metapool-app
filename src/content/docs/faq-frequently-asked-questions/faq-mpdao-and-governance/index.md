@@ -10,10 +10,7 @@ Is the way in which Meta Pool’s DAO consolidate. It’s the set of rules and g
 
 The v0.2 of governance implies the redistribution of the fees covered by Meta Pool to the participants of Meta Pool’s DAO.&#x20;
 
-On a monthly basis, Staking reward fees will be distributed based on the following conditions:
-
-* 65% to mpDAO token holders that generate voting power.
-* 35% to initiatives proposed by Community Representatives, projects or organizations.
+On a monthly basis, staking reward fees are distributed as defined in [MPIP-32](https://www.metapool.app/mpip?id=32).
 
 </details>
 
@@ -93,7 +90,6 @@ No, the mpDAO token holders have the option and moral responsibility to promote 
 
 <summary>Do I receive any reward for participating in voting rounds?</summary>
 
-Meta Pool distributes 65% of their fees among the users that hold voting power and vote in the DAO.\
-\*Check the last proposal approved for more details [https://dev.near.org/meta-pool-official.near/widget/ImprovementProposals?tab=proposal\&mpip\_id=09](https://dev.near.org/meta-pool-official.near/widget/ImprovementProposals?tab=proposal\&mpip_id=09)
+The share of fees distributed to voters who vote in the DAO is defined in [MPIP-32](https://www.metapool.app/mpip?id=32).
 
 </details>

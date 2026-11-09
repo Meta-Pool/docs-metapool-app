@@ -76,8 +76,7 @@ Lock your mpDAO tokens for a chosen period of time and get Voting Power.
 
 <summary>Do I receive any reward for participating in voting rounds?</summary>
 
-Meta Pool distributes 65% of their fees among the users that hold voting power in the DAO.\
-\*Check the last proposal approved for more details [https://dev.near.org/meta-pool-official.near/widget/ImprovementProposals?tab=proposal\&mpip\_id=09](https://dev.near.org/meta-pool-official.near/widget/ImprovementProposals?tab=proposal\&mpip_id=09)
+The share of fees distributed to voters is defined in [MPIP-32](https://www.metapool.app/mpip?id=32).
 
 </details>
 
