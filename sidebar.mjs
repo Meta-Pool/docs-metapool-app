@@ -94,23 +94,6 @@ export default [
             "slug": "validator-nodes/validator-programs/professional-node-operators-program"
           },
           {
-            "label": "Node Studio Program #1 (Closed / Historical)",
-            "items": [
-              {
-                "label": "Node Studio Program #1 (Closed / Historical)",
-                "slug": "validator-nodes/validator-programs/node-studio-program-1"
-              },
-              {
-                "label": "Participation Guidelines",
-                "slug": "validator-nodes/validator-programs/node-studio-program-1/participation-guidelines"
-              },
-              {
-                "label": "Monthly Payment",
-                "slug": "validator-nodes/validator-programs/node-studio-program-1/monthly-payment"
-              }
-            ]
-          },
-          {
             "label": "Node Studio Program #2",
             "items": [
               {
